@@ -1,6 +1,6 @@
 layout: page
 title: "TeamBio"
-permalink: /URL-PATH
+permalink: /main
 
 
 <!-- CONTENT GOES HERE -->
