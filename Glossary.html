@@ -1,36 +1,120 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-    a {
-        font-size: 20px;
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GradMap - Glossary</title>
+  <style>
+    body {
+      background-color: whitesmoke;
+      font-family: Arial, sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 0;
     }
-    a:link {
-      color: cornflowerblue; /* Unvisited link */
+
+    /* Navigation and header */
+    header {
+      text-align: center;
+      background-color: aquamarine;
+      color: cornflowerblue;
+      padding: 10px 0;
     }
-    a:visited {
-      color: cornflowerblue; /* Visited link */
+
+    nav {
+      background-color: aquamarine;
+      text-align: center;
+      padding: 10px;
     }
-    a:hover {
-      color: gray; /* Link when the mouse hovers over it */
+
+    nav a {
+      font-size: 20px;
+      margin: 0 15px;
+      text-decoration: none;
+      color: cornflowerblue;
+      font-weight: bold;
+      transition: color 0.2s ease-in-out;
     }
-    a:active {
-      color: red; /* Link when it is clicked */
+
+    nav a:hover {
+      color: gray;
+    }
+
+    nav a:active {
+      color: red;
+    }
+
+    /* Glossary content */
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: cornflowerblue;
+      border-bottom: 2px solid aquamarine;
+      padding-bottom: 5px;
+      margin-top: 1.5rem;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+      background-color: #f0f0f0;
     }
   </style>
-<title>GradMap Home</title>>
-<div style="text-align: center; background-color: aquamarine;">
-    <h1 style="color: cornflowerblue;">GradMap</h1>
-</div>
-<div style = "background-color: aquamarine; color: cornflowerblue;">
+</head>
+
+<body>
+  <header>
+    <h1>GradMap</h1>
+  </header>
+
+  <nav>
     <a href="index.html">Homepage</a>
     <a href="Presentations.html">Presentations</a>
     <a href="TeamBio.html">Meet the Team</a>
     <a href="Glossary.html">Glossary</a>
     <a href="References.html">References</a>
-</div>
-    </head>
-        <body style=" background-color: whitesmoke;">
-<div style="text-align: center;">
-        </body>
+  </nav>
+
+  <div class="container">
+    <h1 style="text-align:center; color: cornflowerblue;">Glossary</h1>
+
+    <h2>GradMap</h2>
+    <p>An interactive application designed to assist students and academic advisors in visualizing academic progress, managing course completion, and tracking degree requirements in real-time.</p>
+
+    <h2>Data Management</h2>
+    <p>The process of collecting, storing, and updating student information and progress data efficiently and securely within the GradMap system.</p>
+
+    <h2>Real-Time Alerts</h2>
+    <p>Notifications sent instantly to users when significant events occur, such as missing prerequisites, approaching graduation requirements, or changes in course availability.</p>
+
+    <h2>Real-Time Data</h2>
+    <p>The immediate access and updating of academic information within the GradMap dashboard, ensuring that users always view the most recent data.</p>
+
+    <h2>Sensor Threshold</h2>
+    <p>A system-defined limit used in GradMap’s backend monitoring tools that triggers alerts when performance metrics or usage patterns exceed expected values.</p>
+
+    <h2>User Dashboard</h2>
+    <p>The central interface of GradMap that allows users to view degree progress, upcoming courses, alerts, and academic milestones all in one location.</p>
+
+    <h2>Data Visualization</h2>
+    <p>The use of interactive graphs and charts in GradMap to represent academic progress, credit completion, and GPA trends in a visual and understandable way.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 GradMap Team. All rights reserved.
+  </footer>
+</body>
 </html>
