@@ -1,44 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-    a {
-        font-size: 20px;
-    }
-    a:link {
-      color: cornflowerblue; /* Unvisited link */
-    }
-    a:visited {
-      color: cornflowerblue; /* Visited link */
-    }
-    a:hover {
-      color: gray; /* Link when the mouse hovers over it */
-    }
-    a:active {
-      color: red; /* Link when it is clicked */
-    }
-  </style>
-<title>GradMap Home</title>>
-<div style="text-align: center; background-color: aquamarine;">
-    <h1 style="color: cornflowerblue;">GradMap</h1>
-</div>
-<div style = "background-color: aquamarine; color: cornflowerblue;">
-    <a href="index.html">Homepage</a>
-    <a href="Presentations.html">Presentations</a>
-    <a href="TeamBio.html">Meet the Team</a>
-    <a href="Glossary.html">Glossary</a>
-    <a href="References.html">References</a>
-</div>
-    </head>
-        <body style=" background-color: whitesmoke;">
-<div style="text-align: center;">
-    <h1>Feasibility Presentation</h1>
-    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQUyvTAZjLcb-qbvly4JowKa9e-GOGZa-ZQggd2V5W6M5GOZuktPPoG4pdYfuTMk2LucdEGK1LMuGiX/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</div>
-<div style="text-align: center;">
-  <br>
-  <br>
-  <embed src="Feasibility Iteration 3 Team Ruby.pdf" type="application/pdf" width="80%" height="550px">
-</div>
-        </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GradMap - Presentations</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            font-family: Arial, sans-serif;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation and header */
+        header {
+            text-align: center;
+            background-color: aquamarine;
+            color: cornflowerblue;
+            padding: 10px 0;
+        }
+
+        nav {
+            background-color: aquamarine;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            font-size: 20px;
+            margin: 0 15px;
+            text-decoration: none;
+            color: cornflowerblue;
+            font-weight: bold;
+            transition: color 0.2s ease-in-out;
+        }
+
+        nav a:hover {
+            color: gray;
+        }
+
+        nav a:active {
+            color: red;
+        }
+
+        /* Content container */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center; /* Keeping this centered for the embedded content */
+        }
+
+        h2 {
+            color: cornflowerblue;
+            border-bottom: 2px solid aquamarine;
+            padding-bottom: 5px;
+            margin-top: 1.5rem;
+        }
+        
+        h1.page-title { /* Added a class for the main title within the container */
+            text-align: center; 
+            color: cornflowerblue;
+            margin-bottom: 20px;
+        }
+
+
+        p {
+            margin-top: 0.5rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #555;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>GradMap</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="Presentations.html">Presentations</a>
+        <a href="TeamBio.html">Meet the Team</a>
+        <a href="Glossary.html">Glossary</a>
+        <a href="References.html">References</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Feasibility Presentation</h1>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQUyvTAZjLcb-qbvly4JowKa9e-GOGZa-ZQggd2V5W6M5GOZuktPPoG4pdYfuTMk2LucdEGK1LMuGiX/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        
+        <br>
+        <br>
+        <embed src="Feasibility Iteration 3 Team Ruby.pdf" type="application/pdf" width="80%" height="550px">
+    </div>
+
+</body>
 </html>
