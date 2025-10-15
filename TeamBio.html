@@ -1,54 +1,136 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-    a {
-        font-size: 20px;
-    }
-    a:link {
-      color: cornflowerblue; /* Unvisited link */
-    }
-    a:visited {
-      color: cornflowerblue; /* Visited link */
-    }
-    a:hover {
-      color: gray; /* Link when the mouse hovers over it */
-    }
-    a:active {
-      color: red; /* Link when it is clicked */
-    }
-  </style>
-<title>GradMap Home</title>>
-<div style="text-align: center; background-color: aquamarine;">
-    <h1 style="color: cornflowerblue;">GradMap</h1>
-</div>
-<div style = "background-color: aquamarine; color: cornflowerblue;">
-    <a href="index.html">Homepage</a>
-    <a href="Presentations.html">Presentations</a>
-    <a href="TeamBio.html">Meet the Team</a>
-    <a href="Glossary.html">Glossary</a>
-    <a href="References.html">References</a>
-</div>
-    </head>
-        <body style=" background-color: whitesmoke;">
-<div style="text-align: center;">
-    <h2>Meet The Team</h2>
-    <p></p>
-    <h3> Daniella Brandt - Research Lead</h3>
-    <img src="ImageSrc/Dani.jpg" width="300" height="300">
-    <p>Daniella is a senior Computer Science major at Old Dominion University. She contributes her problem-solving and teamwork skills to the project while balancing interests in the medical field outside of technology.</p>
-    <h3>Matthew Haydon - Designing Lead</h3>
-    <img src="ImageSrc/Matthew.jpg" width="300" height="300">
-    <p>Matthew is currently a senior at Old Dominion University. He is majoring in Computer Science. He is interested in pursuing a career in software development and game development after obtaining his bachelor's degree. In his free time he likes to play video games, read, and spend time with his pets and family. </p>
-    <h3>Jackson Garrett - Programming Lead</h3>
-    <img src="ImageSrc/ID.jpg" width="300" height="300">
-    <p>Jackson is a Junior at Old Dominion University. He has interests that span throughout the vast majority of the STEM universe, and is currently majoring in Computer Science. Additonally, Jackson is scheduled to graduate with three additional minors in Physics, Applied Math, and Computer Engineering. In his free time, he works with his peers in the game design club to create games with meaning.</p>
-    <h3>Brice Bounds - Database Lead</h3>
-    <img src="ImageSrc/Brice.jpg" width="300" height="300">
-    <p>Brice is currently a senior at Old Dominion University who is seeking his Bachelor’s degree in Computer Science. He is interested in pursuing a career in database development. He is on the Men’s ODU Swimming Team and looks to finish his career strong. Some of his interests include watching football, hanging with his friends, and playing sports. </p>
-    <h3>Alex Machado - Content Lead</h3>
-    <img src="ImageSrc/Alex.png" width="300" height="300">
-    <p>Alex Machado is a computer science student at Old Dominion University, set to complete his degree in Spring 2026. He has developed strong skills in technical problem-solving. Passionate about technology and continuous learning, he has two years of experience in Python programming and is expanding his expertise in software development.</p>
-</div>
-        </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GradMap - Meet the Team</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            font-family: Arial, sans-serif;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation and header */
+        header {
+            text-align: center;
+            background-color: aquamarine;
+            color: cornflowerblue;
+            padding: 10px 0;
+        }
+
+        nav {
+            background-color: aquamarine;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            font-size: 20px;
+            margin: 0 15px;
+            text-decoration: none;
+            color: cornflowerblue;
+            font-weight: bold;
+            transition: color 0.2s ease-in-out;
+        }
+
+        nav a:hover {
+            color: gray;
+        }
+
+        nav a:active {
+            color: red;
+        }
+
+        /* Content container */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center; /* Centering the team members */
+        }
+
+        h2 {
+            color: cornflowerblue;
+            border-bottom: 2px solid aquamarine;
+            padding-bottom: 5px;
+            margin-top: 1.5rem;
+        }
+        
+        h1.page-title { /* Added a class for the main title within the container */
+            text-align: center; 
+            color: cornflowerblue;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for team member headings (H3) */
+        .container h3 {
+            color: #4682b4; /* Cornflowerblue equivalent for H3 */
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .container img {
+            border-radius: 50%; /* Make images circular */
+            margin-bottom: 10px;
+            border: 3px solid aquamarine;
+        }
+
+        p {
+            margin-top: 0.5rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #555;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>GradMap</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="Presentations.html">Presentations</a>
+        <a href="TeamBio.html">Meet the Team</a>
+        <a href="Glossary.html">Glossary</a>
+        <a href="References.html">References</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Meet The Team</h1>
+        
+        <h3>Daniella Brandt - Research Lead</h3>
+        <img src="ImageSrc/Dani.jpg" width="300" height="300" alt="Picture of Daniella Brandt">
+        <p>Daniella is a senior Computer Science major at Old Dominion University. She contributes her problem-solving and teamwork skills to the project while balancing interests in the medical field outside of technology.</p>
+        
+        <h3>Matthew Haydon - Designing Lead</h3>
+        <img src="ImageSrc/Matthew.jpg" width="300" height="300" alt="Picture of Matthew Haydon">
+        <p>Matthew is currently a senior at Old Dominion University. He is majoring in Computer Science. He is interested in pursuing a career in software development and game development after obtaining his bachelor's degree. In his free time he likes to play video games, read, and spend time with his pets and family. </p>
+        
+        <h3>Jackson Garrett - Programming Lead</h3>
+        <img src="ImageSrc/ID.jpg" width="300" height="300" alt="Picture of Jackson Garrett">
+        <p>Jackson is a Junior at Old Dominion University. He has interests that span throughout the vast majority of the STEM universe, and is currently majoring in Computer Science. Additonally, Jackson is scheduled to graduate with three additional minors in Physics, Applied Math, and Computer Engineering. In his free time, he works with his peers in the game design club to create games with meaning.</p>
+        
+        <h3>Brice Bounds - Database Lead</h3>
+        <img src="ImageSrc/Brice.jpg" width="300" height="300" alt="Picture of Brice Bounds">
+        <p>Brice is currently a senior at Old Dominion University who is seeking his Bachelor’s degree in Computer Science. He is interested in pursuing a career in database development. He is on the Men’s ODU Swimming Team and looks to finish his career strong. Some of his interests include watching football, hanging with his friends, and playing sports. </p>
+        
+        <h3>Alex Machado - Content Lead</h3>
+        <img src="ImageSrc/Alex.png" width="300" height="300" alt="Picture of Alex Machado">
+        <p>Alex Machado is a computer science student at Old Dominion University, set to complete his degree in Spring 2026. He has developed strong skills in technical problem-solving. Passionate about technology and continuous learning, he has two years of experience in Python programming and is expanding his expertise in software development.</p>
+    </div>
+</body>
 </html>
