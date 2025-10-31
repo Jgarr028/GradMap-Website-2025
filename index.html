@@ -12,7 +12,7 @@
             padding: 0;
         }
 
-        /* Navigation and header */
+        /* Header */
         header {
             text-align: center;
             background-color: aquamarine;
@@ -20,12 +20,12 @@
             padding: 10px 0;
         }
 
+        /* Navigation */
         nav {
             background-color: aquamarine;
             text-align: center;
             padding: 10px;
         }
-
         nav a {
             font-size: 20px;
             margin: 0 15px;
@@ -34,13 +34,56 @@
             font-weight: bold;
             transition: color 0.2s ease-in-out;
         }
-
         nav a:hover {
             color: gray;
         }
-
         nav a:active {
             color: red;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        /* Dropdown button */
+        .dropbtn {
+            font-size: 20px;
+            font-weight: bold;
+            color: cornflowerblue;
+            text-decoration: none;
+            padding: 0;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: aquamarine;
+            min-width: 180px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        /* Links inside dropdown */
+        .dropdown-content a {
+            color: cornflowerblue;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Hover effect for links */
+        .dropdown-content a:hover {
+            background-color: #b2f0e1;
+            color: gray;
+        }
+
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         /* Content container */
@@ -51,17 +94,15 @@
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center; /* Centering the text content on the homepage */
+            text-align: center;
         }
 
-        /* Main title inside the container */
-        h1.page-title { 
-            text-align: center; 
+        h1.page-title {
+            text-align: center;
             color: cornflowerblue;
             margin-bottom: 20px;
         }
 
-        /* Section titles */
         h2 {
             color: cornflowerblue;
             border-bottom: 2px solid aquamarine;
@@ -69,10 +110,9 @@
             margin-top: 1.5rem;
             font-size: 24px;
         }
-        
-        /* Sub-section titles */
+
         h3 {
-            color: #4682b4; /* A slightly darker blue for contrast */
+            color: #4682b4;
             margin-top: 1.5rem;
             font-size: 20px;
             border-bottom: 1px dashed #ccc;
@@ -82,21 +122,19 @@
         p {
             margin-top: 0.5rem;
             line-height: 1.6;
-            text-align: left; /* Align paragraphs left for better reading */
+            text-align: left;
             padding: 0 15px;
         }
-        
-        /* Footer styling */
+
         footer {
             text-align: center;
             padding: 1rem 0;
             font-size: 0.9rem;
             color: cornflowerblue;
             background-color: aquamarine;
-            margin-top: 2rem; /* Add space above the footer links */
+            margin-top: 2rem;
         }
-        
-        /* Links inside the footer */
+
         footer a {
             font-size: 16px;
             margin: 0 10px;
@@ -115,7 +153,7 @@
         <h1>GradMap</h1>
     </header>
 
-        <nav>
+    <nav>
         <a href="index.html">Home</a>
         <a href="Presentations.html">Presentations</a>
 
@@ -123,13 +161,13 @@
         <div class="dropdown">
             <a href="Deliverables.html" class="dropbtn">Deliverables</a>
             <div class="dropdown-content">
-                <a href="#process-flows">Process Flows</a>
-                <a href="#risks">Risks</a>
-                <a href="#mfcd">MFCD</a>
-                <a href="#features-table">Features Table</a>
-                <a href="#mockups">Mockups</a>
-                <a href="#wbs">WBS</a>
-                <a href="#database-schema">Database Schema</a>
+                <a href="Deliverables.html#process-flows">Process Flows</a>
+                <a href="Deliverables.html#risks">Risks</a>
+                <a href="Deliverables.html#mfcd">MFCD</a>
+                <a href="Deliverables.html#features-table">Features Table</a>
+                <a href="Deliverables.html#mockups">Mockups</a>
+                <a href="Deliverables.html#wbs">WBS</a>
+                <a href="Deliverables.html#database-schema">Database Schema</a>
             </div>
         </div>
 
@@ -140,7 +178,6 @@
 
     <div class="container">
         <h1 class="page-title">Your Roadmap to Graduation Success</h1>
-        
         <p style="text-align:center;">Team Ruby</p>
         <p style="text-align:center;">CS410 Fall 2025</p>
 

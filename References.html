@@ -12,7 +12,7 @@
             padding: 0;
         }
 
-        /* Navigation and header */
+        /* Header */
         header {
             text-align: center;
             background-color: aquamarine;
@@ -20,12 +20,12 @@
             padding: 10px 0;
         }
 
+        /* Navigation */
         nav {
             background-color: aquamarine;
             text-align: center;
             padding: 10px;
         }
-
         nav a {
             font-size: 20px;
             margin: 0 15px;
@@ -34,13 +34,56 @@
             font-weight: bold;
             transition: color 0.2s ease-in-out;
         }
-
         nav a:hover {
             color: gray;
         }
-
         nav a:active {
             color: red;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        /* Dropdown button */
+        .dropbtn {
+            font-size: 20px;
+            font-weight: bold;
+            color: cornflowerblue;
+            text-decoration: none;
+            padding: 0;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: aquamarine;
+            min-width: 180px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        /* Links inside dropdown */
+        .dropdown-content a {
+            color: cornflowerblue;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Hover effect for links */
+        .dropdown-content a:hover {
+            background-color: #b2f0e1;
+            color: gray;
+        }
+
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         /* Content container */
@@ -59,9 +102,9 @@
             padding-bottom: 5px;
             margin-top: 1.5rem;
         }
-        
-        h1.page-title { /* Added a class for the main title within the container */
-            text-align: center; 
+
+        h1.page-title {
+            text-align: center;
             color: cornflowerblue;
             margin-bottom: 20px;
         }
@@ -71,15 +114,14 @@
             line-height: 1.6;
         }
 
-        /* Custom styling for references to improve readability */
+        /* Custom styling for references */
         .references p {
             text-align: left;
             margin-bottom: 1rem;
         }
         .references br {
-            line-height: 2; /* Increase spacing between references */
+            line-height: 2;
         }
-
 
         footer {
             text-align: center;
@@ -96,7 +138,7 @@
         <h1>GradMap</h1>
     </header>
 
-        <nav>
+    <nav>
         <a href="index.html">Home</a>
         <a href="Presentations.html">Presentations</a>
 
@@ -104,13 +146,13 @@
         <div class="dropdown">
             <a href="Deliverables.html" class="dropbtn">Deliverables</a>
             <div class="dropdown-content">
-                <a href="#process-flows">Process Flows</a>
-                <a href="#risks">Risks</a>
-                <a href="#mfcd">MFCD</a>
-                <a href="#features-table">Features Table</a>
-                <a href="#mockups">Mockups</a>
-                <a href="#wbs">WBS</a>
-                <a href="#database-schema">Database Schema</a>
+                <a href="Deliverables.html#process-flows">Process Flows</a>
+                <a href="Deliverables.html#risks">Risks</a>
+                <a href="Deliverables.html#mfcd">MFCD</a>
+                <a href="Deliverables.html#features-table">Features Table</a>
+                <a href="Deliverables.html#mockups">Mockups</a>
+                <a href="Deliverables.html#wbs">WBS</a>
+                <a href="Deliverables.html#database-schema">Database Schema</a>
             </div>
         </div>
 
@@ -121,7 +163,7 @@
 
     <div class="container">
         <h1 class="page-title">References</h1>
-        
+
         <div class="references">
             <p>
                 CognitoForms. CognitoForms, https://static.cognitoforms.com/content/support/assets/images/basicadmissionsapplicationworkflow-0f52033c-6cfe-42af-84b7-f27227f9aa36-dc49634-1500x650.png. Accessed 29 Sept. 2025.

@@ -12,7 +12,7 @@
       padding: 0;
     }
 
-    /* Navigation and header */
+    /* Header */
     header {
       text-align: center;
       background-color: aquamarine;
@@ -20,6 +20,7 @@
       padding: 10px 0;
     }
 
+    /* Navigation */
     nav {
       background-color: aquamarine;
       text-align: center;
@@ -34,16 +35,50 @@
       font-weight: bold;
       transition: color 0.2s ease-in-out;
     }
+    nav a:hover { color: gray; }
+    nav a:active { color: red; }
 
-    nav a:hover {
+    /* Dropdown container */
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropbtn {
+      font-size: 20px;
+      font-weight: bold;
+      color: cornflowerblue;
+      text-decoration: none;
+      padding: 0;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: aquamarine;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      text-align: left;
+    }
+
+    .dropdown-content a {
+      color: cornflowerblue;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #b2f0e1;
       color: gray;
     }
 
-    nav a:active {
-      color: red;
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
 
-    /* Glossary content */
+    /* Content container */
     .container {
       max-width: 900px;
       margin: 2rem auto;
@@ -51,6 +86,12 @@
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1.page-title {
+      text-align: center; 
+      color: cornflowerblue;
+      margin-bottom: 20px;
     }
 
     h2 {
@@ -80,31 +121,31 @@
     <h1>GradMap</h1>
   </header>
 
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="Presentations.html">Presentations</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Presentations.html">Presentations</a>
 
-        <!-- Deliverables Dropdown -->
-        <div class="dropdown">
-            <a href="Deliverables.html" class="dropbtn">Deliverables</a>
-            <div class="dropdown-content">
-                <a href="#process-flows">Process Flows</a>
-                <a href="#risks">Risks</a>
-                <a href="#mfcd">MFCD</a>
-                <a href="#features-table">Features Table</a>
-                <a href="#mockups">Mockups</a>
-                <a href="#wbs">WBS</a>
-                <a href="#database-schema">Database Schema</a>
-            </div>
-        </div>
+    <!-- Deliverables Dropdown -->
+    <div class="dropdown">
+      <a href="Deliverables.html" class="dropbtn">Deliverables</a>
+      <div class="dropdown-content">
+        <a href="Deliverables.html#process-flows">Process Flows</a>
+        <a href="Deliverables.html#risks">Risks</a>
+        <a href="Deliverables.html#mfcd">MFCD</a>
+        <a href="Deliverables.html#features-table">Features Table</a>
+        <a href="Deliverables.html#mockups">Mockups</a>
+        <a href="Deliverables.html#wbs">WBS</a>
+        <a href="Deliverables.html#database-schema">Database Schema</a>
+      </div>
+    </div>
 
-        <a href="MeetTheTeam.html">Meet The Team</a>
-        <a href="Glossary.html">Glossary</a>
-        <a href="References.html">References</a>
-    </nav>
+    <a href="MeetTheTeam.html">Meet The Team</a>
+    <a href="Glossary.html">Glossary</a>
+    <a href="References.html">References</a>
+  </nav>
 
   <div class="container">
-    <h1 style="text-align:center; color: cornflowerblue;">Glossary</h1>
+    <h1 class="page-title">Glossary</h1>
 
     <h2>GradMap</h2>
     <p>An interactive application designed to assist students and academic advisors in visualizing academic progress, managing course completion, and tracking degree requirements in real-time.</p>
@@ -127,6 +168,5 @@
     <h2>Data Visualization</h2>
     <p>The use of interactive graphs and charts in GradMap to represent academic progress, credit completion, and GPA trends in a visual and understandable way.</p>
   </div>
-
 </body>
 </html>
